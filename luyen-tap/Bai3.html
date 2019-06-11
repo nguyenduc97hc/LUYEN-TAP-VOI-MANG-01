@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str = ["1","2","3","4","5","6","7","8","9","10"];
+        let max = str[0];
+        let index = 0;
+        let sum=avg = 0;
+        for(i=0;i<str.length;i++){
+            sum +=eval(str[i]);
+            avg = sum/i;
+            if(max<str[i]){
+                max=str[i];
+                index = i;
+            }
+        }
+        document.write("Số lớn nhất là " + max + " ở vị trị thứ " + i +"<br/>");
+        document.write("trung bình cộng là " +avg);
+    </script>
+</body>
+</html>

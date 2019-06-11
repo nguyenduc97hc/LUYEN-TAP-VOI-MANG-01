@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = ["1","2","3","4","5","6","7","8","9","10"];
+    let v = prompt("Nhập V");
+    let positon = str.indexOf(v);
+    if(positon!=-1){
+        alert("V nam trong mang")
+        str.splice(str[positon-1],1);
+    }
+    alert("Mảng mới là " +str)
+</script>
+</body>
+</html>
